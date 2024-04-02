@@ -17,7 +17,7 @@ import java.math.BigDecimal
 class MainActivity : ComponentActivity() { //Herança - subclasse
     /**
      * Método chamado quando a atividade está sendo criada.
-     * @param savedInstanceState Um objeto Bundle contendo o estado anterior da atividade, se disponível.
+     * @param savedInstanceState: Um objeto Bundle contendo o estado anterior da atividade, se disponível.
      */
     @SuppressLint("MissingInflatedId") // Indica ao compilador ignorar/suprimir o aviso (geralmente gerado no método findViewById) relacionado a um ID de layout ausente
     override fun onCreate(savedInstanceState: Bundle?) { // Polimorfismo
