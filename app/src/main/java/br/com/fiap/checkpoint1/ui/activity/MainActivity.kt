@@ -16,19 +16,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Binding: processo de vinculação do código fonte com o arquivo de layout.
-//        val nome = findViewById<TextView>(R.id.nome)
-//        nome.text = "Carro horrível, caçamba e step de fácil remoção"
-//
-//        val marca = findViewById<TextView>(R.id.descricao)
-//        marca.text = "Ford"
-//
-//        val descricao = findViewById<TextView>(R.id.descricao)
-//        descricao.text = "R$9,90"
-//
-//        val valor = findViewById<TextView>(R.id.valor)
-//        valor.text = "19.99"
-
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = ListaCarrosAdapter(
             context = this,
@@ -38,7 +25,5 @@ class MainActivity : ComponentActivity() {
             )
         )
 
-//        val recyclerView = findViewById< RecyclerView>(R.id.recyclerView)
-//        recyclerView.adapter = ListaCarrosAdapter(this)
     }
 }
