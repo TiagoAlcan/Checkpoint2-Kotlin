@@ -1,9 +1,17 @@
+<!-- A estrutura do layout é projetada para ser utilizada em listas de informações
+  que exibem coleções de carros e especificações do mesmo, permitindo aos usuários obter rapidamente
+  informações essenciais e visuais sobre cada carro. -->
+
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- TextView para exibir o nome do carro -->
 
     <TextView
         android:id="@+id/nome"
@@ -16,6 +24,9 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Courrier" />
 
+
+    <!-- TextView para exibir a descrição do carro -->
+
     <TextView
         android:id="@+id/descricao"
         android:layout_width="0dp"
@@ -26,6 +37,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nome"
         tools:text="Carro horrível, caçamba e step de fácil remoção" />
+
+
+    <!-- TextView para exibir a marca do carro -->
 
     <TextView
         android:id="@+id/marca"
@@ -38,6 +52,9 @@
         app:layout_constraintTop_toBottomOf="@id/descricao"
         tools:text="Ford" />
 
+
+    <!-- TextView para exibir o valor do carro -->
+
     <TextView
         android:id="@+id/valor"
         android:layout_width="0dp"
@@ -49,6 +66,9 @@
         app:layout_constraintTop_toBottomOf="@id/marca"
         tools:text="R$9,90" />
 
+
+    <!-- ImageView para exibir a imagem do carro -->
+
     <ImageView
         android:id="@+id/imageUrl"
         android:layout_width="wrap_content"
@@ -59,12 +79,6 @@
         app:srcCompat="@drawable/courrier"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="78dp" />
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
