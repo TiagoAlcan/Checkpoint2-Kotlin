@@ -8,3 +8,4 @@ Matheus Perestrelo - 93260;
 Gabriel Oliveira Toledo - 93152;
 Tiago Gomes Alcantara - 95849;
 Guilherme Loreiro - 88722;
+Guilherme Tome Dias - 94186;
