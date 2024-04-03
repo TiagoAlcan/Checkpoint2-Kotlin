@@ -1,73 +1,66 @@
-<!-- A estrutura do layout é projetada para ser utilizada em listas de informações
+// A estrutura do layout é projetada para ser utilizada em listas de informações
   que exibem coleções de carros e especificações do mesmo, permitindo aos usuários obter rapidamente
-  informações essenciais e visuais sobre cada carro. -->
+  informações essenciais e visuais sobre cada carro. 
 
 
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?> // Declaração padrão do XML. 
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent" // A largura do layout se ajusta à largura do elemento pai. 
+    android:layout_height="wrap_content" // A altura do layout se ajusta ao conteúdo. 
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
+    xmlns:tools="http://schemas.android.com/tools"> // Ferramentas de namespace para design-time atributos 
 
     <!-- TextView para exibir o nome do carro -->
 
     <TextView
-        android:id="@+id/nome"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Courrier" />
-
+        android:id="@+id/nome" // Identificador único para o TextView. 
+        android:layout_width="0dp" // Largura definida como 0dp para que as restrições de início e fim determinem a largura real. 
+        android:layout_height="wrap_content" // Altura se ajusta ao conteúdo do TextView. 
+        android:layout_margin="16dp" // Margem de 16dp em todos os lados. 
+        android:textSize="18sp" // Tamanho do texto definido em sp (scale-independent pixels). 
+        app:layout_constraintEnd_toEndOf="parent" // Restrição de fim alinhado ao fim do layout pai. 
+        app:layout_constraintStart_toStartOf="parent" // Restrição de início alinhado ao início do layout pai. 
+        app:layout_constraintTop_toTopOf="parent" // Restrição de topo alinhado ao topo do layout pai. 
+        tools:text="Courrier" /> // Texto de exemplo para visualização no editor. 
 
     <!-- TextView para exibir a descrição do carro -->
 
     <TextView
-        android:id="@+id/descricao"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nome"
-        tools:text="Carro horrível, caçamba e step de fácil remoção" />
-
+        android:id="@+id/descricao" // Identificador único para o TextView. 
+        android:layout_width="0dp" // Largura definida como 0dp para que as restrições de início e fim determinem a largura real. 
+        android:layout_height="wrap_content" // Altura se ajusta ao conteúdo do TextView. 
+        android:layout_marginStart="16dp" // Margem de início de 16dp. 
+        android:layout_marginEnd="16dp" // Margem de fim de 16dp. 
+        app:layout_constraintEnd_toEndOf="parent" // Restrição de fim alinhado ao fim do layout pai. 
+        app:layout_constraintStart_toStartOf="parent" // Restrição de início alinhado ao início do layout pai. 
+        app:layout_constraintTop_toBottomOf="@id/nome" // Restrição de topo alinhado ao fundo do TextView nome. 
+        tools:text="Carro horrível, caçamba e step de fácil remoção" /> // Texto de exemplo para visualização no editor. 
 
     <!-- TextView para exibir a marca do carro -->
 
     <TextView
-        android:id="@+id/marca"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descricao"
-        tools:text="Ford" />
-
+        android:id="@+id/marca" // Identificador único para o TextView. 
+        android:layout_width="0dp" // Largura definida como 0dp para que as restrições de início e fim determinem a largura real. 
+        android:layout_height="wrap_content" // Altura se ajusta ao conteúdo do TextView. 
+        android:layout_marginStart="16dp" // Margem de início de 16dp. 
+        android:layout_marginEnd="16dp" // Margem de fim de 16dp. 
+        app:layout_constraintEnd_toEndOf="parent" // Restrição de fim alinhado ao fim do layout pai. 
+        app:layout_constraintStart_toStartOf="parent" // Restrição de início alinhado ao início do layout pai. 
+        app:layout_constraintTop_toBottomOf="@id/descricao" // Restrição de topo alinhado ao fundo do TextView descrição. 
+        tools:text="Ford" /> // Texto de exemplo para visualização no editor. 
 
     <!-- TextView para exibir o valor do carro -->
 
     <TextView
-        android:id="@+id/valor"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/marca"
-        tools:text="R$9,90" />
+        android:id="@+id/valor" // Identificador único para o TextView. 
+        android:layout_width="0dp" // Largura definida como 0dp para que as restrições de início e fim determinem a largura real. 
+        android:layout_height="wrap_content" // Altura se ajusta ao conteúdo do TextView. 
+        android:layout_marginStart="16dp" // Margem de início de 16dp. 
+        android:layout_marginEnd="16dp" // Margem de fim de 16dp. 
+        app:layout_constraintEnd_toEndOf="parent" />// Restrição de fim alinhado ao fim do layout pai
 
-
-    <!-- ImageView para exibir a imagem do carro -->
+     <!-- ImageView para exibir a imagem do carro -->
 
     <ImageView
         android:id="@+id/imageUrl"
