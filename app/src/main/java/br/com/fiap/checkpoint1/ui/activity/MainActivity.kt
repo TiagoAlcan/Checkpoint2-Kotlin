@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() { //Herança - subclasse
      * @param savedInstanceState: Um objeto Bundle contendo o estado anterior da atividade, se disponível.
      */
     @SuppressLint("MissingInflatedId") // Indica ao compilador ignorar/suprimir o aviso (geralmente gerado no método findViewById) relacionado a um ID de layout ausente
-    override fun onCreate(savedInstanceState: Bundle?) { // Polimorfismo
+    override fun onCreate(savedInstanceState: Bundle?) { // Polimorfismo - armazenar e recuperar informações importantes sobre o estado da sua atividade, garantindo que as informações sejam mantidas durante mudanças no ciclo de vida da atividade (chave e valor).
         super.onCreate(savedInstanceState) // Garante que o comporatmento da classe pai seja executado durante a criação da atividade
         setContentView(R.layout.activity_main) // Define o layout da atividade como activity_main.xml
 
