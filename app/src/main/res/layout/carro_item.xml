@@ -63,15 +63,15 @@
      <!-- ImageView para exibir a imagem do carro -->
 
     <ImageView
-        android:id="@+id/imageUrl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/valor"
-        app:srcCompat="@drawable/courrier"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="78dp" />
+        android:id="@+id/imageUrl" // Identificador único para imageUrl
+        android:layout_width="wrap_content" // Define a largura da ImageView como "wrap_content". Isso significa que a largura da ImageView será ajustada ao tamanho da imagem.
+        app:layout_constraintEnd_toEndOf="parent" // A borda direita da ImageView estará alinhada com a borda direita do seu layout pai.
+        app:layout_constraintStart_toStartOf="parent" // A borda esquerda da ImageView estará alinhada com a borda esquerda do seu layout pai.
+        app:layout_constraintTop_toBottomOf="@id/valor" // A borda superior da ImageView estará posicionada abaixo da view com o id valor.
+        app:srcCompat="@drawable/courrier" // Define a imagem a ser exibida na ImageView. Neste caso, a imagem courrier do diretório drawable será utilizada.
+        tools:layout_editor_absoluteX="0dp" // Define a posição X da ImageView no editor de layout. Este atributo é ignorado em tempo de execução.
+        tools:layout_editor_absoluteY="78dp" // Define a posição Y da ImageView no editor de layout. Este atributo é ignorado em tempo de execução.
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
