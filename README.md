@@ -1,4 +1,4 @@
-# Checkpoint 1 - KissMa
+# Checkpoint 2 - KissMa
 
 ## Integrantes:
 
